@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KLNCE</title>
+    <style>
+        /* Centers the entire layout on the page vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55vh; 
+            margin: 0;
+            background-color: lightyellow;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Keeps the header section and the login box stacked vertically and centered */
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Aligns the logo and the college name professionally side-by-side */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* Increased gap to balance the larger logo */
+            margin-bottom: 25px; /* Spacing between header and login box */
+        }
+        /* Professional typography matching KLNCE branding */
+        h1 {
+            margin: 0;
+            color: #800000; /* Deep Maroon / Red corporate color */
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+        /* Logo sizing updated to be slightly bigger */
+        .logo-img {
+            max-width: 75px; /* Increased from 55px to 75px */
+            height: auto;
+            mix-blend-mode: multiply; /* Keeps white background removed */
+        }
+        /* Creates the black border container */
+        .login_box {
+            border: 2px solid black;
+            padding: 35px 45px; 
+            text-align: center;
+            background-color: white;
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+        }
+        /* Subtitle inside the box */
+        .box-title {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+            color: #555;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        /* Adds spacing between form elements */
+        .form-group {
+            margin-bottom: 18px;
+        }
+        /* Clean input field styling with updated KLNCE fields */
+        .form-group input {
+            width: 230px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        /* Highlights the input field when clicked */
+        .form-group input:focus {
+            border-color: #800000;
+            box-shadow: 0 0 5px rgba(128, 0, 0, 0.2);
+            outline: none;
+        }
+        /* Stylish, modern blue login button */
+        #loginbutton {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        /* Darkening effect when hovering over the button */
+        #loginbutton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+    
+    <!-- Professional side-by-side header layout -->
+    <div class="header-container">
+        <img src="kln.png" alt="KLNCE Logo" class="logo-img">
+        <h1>KLN COLLEGE OF ENGINEERING</h1>
+    </div>
+    
+    <div class="login_box">
+        <div class="box-title">Student Login</div>
+        
+        <form action="/login-endpoint" method="POST">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Roll Number" required>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div>
+                <button type="submit" id="loginbutton">Login</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
