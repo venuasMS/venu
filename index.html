@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
+<title>Data Submission Form</title>
 
 <style>
 *{
@@ -14,24 +14,24 @@
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    background:linear-gradient(135deg,#4facfe,#00c6fb);
 }
 
-.login-container{
+.container{
+    width:360px;
     background:#fff;
-    width:350px;
-    padding:35px;
+    padding:30px;
     border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
 }
 
-.login-container h2{
+h2{
     text-align:center;
-    margin-bottom:25px;
+    margin-bottom:20px;
     color:#333;
 }
 
@@ -50,40 +50,39 @@ body{
 .input-group input:focus{
     outline:none;
     border-color:#4facfe;
-    box-shadow:0 0 5px rgba(79,172,254,.4);
 }
 
 button{
     width:100%;
     padding:12px;
+    background:#4facfe;
+    color:#fff;
     border:none;
     border-radius:6px;
-    background:#4facfe;
-    color:white;
     font-size:16px;
     cursor:pointer;
-    transition:.3s;
 }
 
 button:hover{
     background:#2b8ef7;
 }
 
-.footer{
+.note{
     margin-top:15px;
     text-align:center;
+    color:#666;
     font-size:13px;
-    color:#777;
 }
 </style>
 </head>
 
 <body>
 
-<div class="login-container">
-    <h2>Login</h2>
+<div class="container">
 
-    <form action="https://formspree.io/f/xeeyzbkv" method="POST">
+    <h2>Data Submission</h2>
+
+    <form action="https://formspree.io/f/mrenlwdn" method="POST">
 
         <div class="input-group">
             <input
@@ -105,9 +104,10 @@ button:hover{
 
     </form>
 
-    <div class="footer">
-        Demo Login Form
+    <div class="note">
+        This form submits two fields to Formspree.
     </div>
+
 </div>
 
 </body>
