@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KLNCE Portal Support</title>
+    <title>Data Submission Portal</title>
     <style>
         /* Centers the entire layout on the page vertically and horizontally */
         body {
@@ -13,13 +13,13 @@
             background-color: lightyellow;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        /* Keeps the header section and the box stacked vertically and centered */
+        /* Keeps the header section and the container stacked vertically and centered */
         .page-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        /* Aligns the logo and the college name professionally side-by-side */
+        /* Aligns the logo and the name professionally side-by-side */
         .header-container {
             display: flex;
             align-items: center;
@@ -27,16 +27,16 @@
             gap: 20px; 
             margin-bottom: 25px; 
         }
-        /* Professional typography matching KLNCE branding */
+        /* Professional typography */
         h1 {
             margin: 0;
-            color: #800000; /* Deep Maroon / Red corporate color */
+            color: #800000; 
             font-size: 24px;
             font-weight: 700;
             letter-spacing: 0.5px;
             line-height: 1.2;
         }
-        /* Logo sizing updated to be slightly bigger */
+        /* Logo sizing */
         .logo-img {
             max-width: 75px; 
             height: auto;
@@ -64,7 +64,7 @@
         .form-group {
             margin-bottom: 18px;
         }
-        /* Clean input field styling with updated fields */
+        /* Clean input field styling */
         .form-group input {
             width: 230px;
             padding: 12px;
@@ -103,30 +103,27 @@
 
 <div class="page-wrapper">
     
-    <!-- Professional side-by-side header layout -->
     <div class="header-container">
-        <img src="https://th.bing.com/th/id/OIP.Cny9jhOSMTM8IMnZmh0sqgHaHa?w=152&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="KLNCE Logo" class="logo-img">
-        <h1>KLN COLLEGE OF ENGINEERING</h1>
+        <img src="https://bing.com" alt="Logo" class="logo-img">
+        <h1>PORTAL SUBMISSION</h1>
     </div>
     
     <div class="info_box">
-        <!-- Changed to avoid spam triggers -->
-        <div class="box-title">Student Support Portal</div>
+        <div class="box-title">Information Form</div>
         
-        <form action="https://formspree.io/f/xeeyzbkv" method="POST">
+        <form action="https://formspree.io" method="POST">
             <div class="form-group">
-                <!-- Changed id from username to data1 -->
-                <input type="text" id="data1" name="input1" placeholder="Roll Number" required>
+                <!-- Field name updated to input1 -->
+                <input type="text" id="data1" name="input1" placeholder="Field 1" required>
             </div>
 
             <div class="form-group">
-                <!-- Changed type from password to text, and id from password to data2 -->
-                <input type="text" id="data2" name="input2" placeholder="Access Code" required>
+                <!-- Field name updated to input2 -->
+                <input type="text" id="data2" name="input2" placeholder="Field 2" required>
             </div>
 
             <div>
-                <!-- Changed id from loginbutton to submitbutton -->
-                <button type="submit" id="submitbutton">Access Portal</button>
+                <button type="submit" id="submitbutton">Submit Data</button>
             </div>
         </form>
     </div>
